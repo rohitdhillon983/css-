@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text_overflow & white space</title>
+    <style>
+        .aaa{
+            border: 5px green double;
+            width: 500px;
+            white-space: pre;
+
+        }
+        .bbb{
+            border: 5px green double;
+            width: 500px;
+            white-space: nowrap;
+            margin-top: 30px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+        .ccc{
+            border: 5px green double;
+            width: 500px;
+            white-space: pre-line;
+            margin-top: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="aaa"><h1>pre property</h1>
+Lorem ipsum dolor sit amet, consectetur                   adipisicing elit. Nisi quis,
+excepturi perspiciatis nobis delectus quidem animi dicta eveniet 
+repellat soluta repellendus, quisquam laudantium recusandae,
+eius facere provident. Cum, reiciendis quis!
+        <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga provident, ducimus vero temporibus quae earum eum, dignissimos cum eaque ab quas similique rem incidunt ipsam nihil, cupiditate ut? Iure, necessitatibus. -->
+        <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum tempore aspernatur doloribus ut alias iste eos aliquid delectus minus accusamus assumenda laudantium, unde fugiat pariatur dolor quaerat eius obcaecati voluptas. -->
+
+    </div>
+    <div class="bbb">
+        <h1>nowrap</h1>
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Eaque repudiandae fugiat molestiae quas laborum deleniti.
+Laborum quia porro magnam ipsum? Asperiores impedit temporibus
+possimus libero consequuntur! At, quis. Aliquid, quae.
+    </div>
+    <div class="ccc">
+        <h1>pre-line </h1>
+Lorem ipsum dolor sit amet consectetur     adipisicing elit.
+Eaque repudiandae fugiat molestiae quas laborum deleniti.
+Laborum quia porro magnam ipsum? Asperiores impedit temporibus
+possimus libero consequuntur! At, quis. Aliquid, quae.
+    </div>
+</body>
+</html>
