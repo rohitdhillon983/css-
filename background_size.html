@@ -6,20 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>background size/origin</title>
     <style>
+        body{
+            background-color: aqua;
+        }
 #box{
     width: 800px;
     height: 400px;
     border: 3px red double;
+    background-color: azure;
     background-image: url( fox.png );
     color: red;
     background-size: 100px 100px ;
     background-repeat: no-repeat;
     background-origin: border-box ;
+    background-clip: padding-box;
+}
+h1{
+    color: transparent;
+    background-image: url( wronge\ way.png );
+    font-size: 150px;
+    font-family: impact;
+    -webkit-background-clip: text ;
 }
     </style>
 </head>
 <body>
-   <h1> CSS : Background Size</h1>
+   <h1> CSS : Background Size / origin / clip</h1>
    <div id="box">
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero aut nemo iusto dolores aperiam, repudiandae excepturi earum consectetur, magni quos deleniti! Quod magnam at odit tempora minus distinctio commodi omnis!
        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto aut accusantium quis maxime consequatur! Consequuntur similique dolorem nihil reprehenderit quae, maiores corrupti nam id labore mollitia rem soluta! Explicabo, possimus. 
