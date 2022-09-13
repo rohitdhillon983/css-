@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background colour grading</title>
+    <title>Background colour grading / blend </title>
     <style>
         h1{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -15,10 +15,8 @@
             border: 5px solid black;
             width: 800px;
             height: 300px;
-            background: linear-gradient( to right,rgb(251, 0, 42),rgba(0, 0, 255, 0.77),rgb(3, 249, 3));
-        }
-        #box2{
-
+            background-image: linear-gradient( to right,rgb(251, 0, 42),rgba(0, 0, 255, 0.77),rgb(3, 249, 3)),url(right_arow2.png);
+            background-blend-mode: hard-light ;
         }
     </style>
 </head>
