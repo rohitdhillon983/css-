@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Position </title>
+    <style>
+        #contaner{
+            background: #eee;
+            width: 700px;
+            margin: 50px 0 0 50px;
+            display: grid;
+            grid-template-columns: 200px auto 200px;
+            grid-template-rows: 100px 100px;
+            grid-gap: 10px;
+        }
+        .item1{
+            background: red;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .item2{
+            background: rgb(255, 55, 0);
+        }
+        .item3{
+            background: rgb(255, 115, 0);
+        }
+        .item4{
+            background: orange;
+        }
+        .item5{
+            background: rgb(255, 213, 0);
+        }
+        .item6{
+            background: rgb(251, 255, 0);
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .main{
+            background: #eee;
+            width: 700px;
+            margin: 50px 0 0 50px;
+            display: grid;
+            grid-template-columns: 200px auto 200px;
+            grid-template-rows: 100px 100px 100px;
+            grid-gap: 10px;
+        }
+        .main1{
+            background: red;
+            grid-column-start:1 ;
+            grid-column-end: 3;
+            
+        }
+        .main2{
+            background: rgb(255, 55, 0);
+            grid-column-start:3 ;
+            grid-column-end:3 ;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .main3{
+            background: rgb(255, 115, 0);
+        }
+        .main4{
+            background: orange;
+        }
+        .main5{
+            background: rgb(255, 213, 0);
+        }
+        .main6{
+            background: rgb(251, 255, 0);
+            grid-column-start:2 ;
+            grid-column-end:4 ;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS :Grid Position</h1>
+<div id="contaner">
+    <div class="item1">First</div>
+    <div class="item2">Second</div>
+    <div class="item3">Third</div>
+    <div class="item4">Fourth</div>
+    <div class="item5">Fifth</div>
+    <div class="item6">Sixth</div>
+</div>
+<h1>CSS : Grid spanning</h1>
+<div class="main">
+    <div class="main1">1</div>
+    <div class="main2">2</div>
+    <div class="main3">3</div>
+    <div class="main4">4</div>
+    <div class="main5">5</div>
+    <div class="main6">6</div>
+</div>
+</body>
+</html>
