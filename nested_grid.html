@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> nested grids </title>
+    <style>
+        #contaner{
+           background: #eee;
+           width: 410px;
+           margin: 50px 0 0 50px;
+           display: grid;
+           grid-template-columns: 200px 200px;
+           grid-template-rows: 100px 100px;
+           grid-gap: 10px;
+                              
+       }
+       .header{
+           background: red;
+          
+       }
+       .menu{
+           background: rgb(255, 55, 0);
+           
+       }
+       .box1{
+           background: rgb(255, 115, 0);
+           display: grid;
+
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+       }
+       .item{
+background: pink;
+padding: 10px;
+       }
+       .box2{
+           background: orange;
+       
+       }
+      
+   </style>
+</head>
+<body>
+    <h1>CSS :Grid Alignment</h1>
+    <div id="contaner">
+        <div class="header">heading</div>
+        <div class="menu">menu</div>
+        <div class="box1">
+           <div class="item">A</div>
+           <div class="item">B</div>
+           <div class="item">C</div>
+        </div>
+        <div class="box2">box2</div>
+</body>
+</html>
