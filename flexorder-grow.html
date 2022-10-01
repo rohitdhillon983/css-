@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background: #eee;
+            width: 600px;
+            margin: 20px;
+            /* height: 800px; */
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+    .item1{
+        background: tomato;
+        width: 100px;
+        height: 100px;
+        flex-grow: 2 ;
+    }
+    .item2{
+        background: rgb(71, 255, 71);
+        width: 100px;
+        height: 200px;
+    }
+    .item3{
+        background: rgb(255, 71, 230);
+        width: 100px;
+        height: 100px;
+        order: -1;
+    }
+    .item4{
+        background: rgb(74, 71, 255);
+        width: 100px;
+        height: 100px;
+        order: 0;
+        flex-grow: 3;
+    }
+   
+    </style>
+</head>
+<body>
+    <h1>CSS : Flax-Direction</h1>
+    <div id="container">
+        <div class="item1">one</div>
+        <div class="item2">two</div>
+        <div class="item3">three</div>
+        <div class="item4">four</div>
+</body>
+    </div>
+</html>
