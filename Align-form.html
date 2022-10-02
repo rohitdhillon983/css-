@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align Forme</title>
+    <style>
+      #wrapper {
+        background: #eee;
+        list-style: none;
+        margin: 50px;
+        padding: 20px;
+        width: 1200px;
+        border: 2px solid red;
+      }
+      #wrapper li {
+        display: flex;
+        padding: 5px 0px;
+        justify-content: flex-end;
+      }
+      #wrapper li label {
+        flex: 1;
+      }
+      #wrapper li input {
+        flex: 5;
+      }
+      @media all and (min-width: 900px) and (max-width:1000px) {
+       
+        #wrapper {
+        background: #eee;
+        list-style: none;
+        margin: 50px;
+        padding: 20px;
+        width: 800px;
+        border: 2px solid rgb(60, 0, 255);
+      }
+      #wrapper li input {
+        flex:2;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS : Align Form with Flexbox</h1>
+    <form action="">
+      <ul id="wrapper">
+        <li>
+          <label for="">Name</label>
+          <input type="text" />
+        </li>
+        <li>
+          <label for="">Class Name</label>
+          <input type="text" />
+        </li>
+        <li>
+          <label for="">Email Address</label>
+          <input type="email" />
+        </li>
+        <li>
+          <button type="submit">Save</button>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
